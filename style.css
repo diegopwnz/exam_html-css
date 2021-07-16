@@ -1,0 +1,67 @@
+body {
+	font-family: 'EB Garamond', serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* header */
+
+.header {
+	height: 53px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.logo__title {
+	text-decoration: none;
+	color: #000;
+	font-weight: 700;
+}
+
+
+.nav__list {
+	list-style-type: none;
+	display: flex;
+}
+
+.nav__link {
+	padding: 15px;
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+	transition: background-color .5s;
+}
+
+.nav__link:hover {
+	background-color: rgb(194, 184, 184);
+}
+
+.header__social {
+	display: flex;
+	padding: 5px;
+	align-items: center;
+}
+
+.header__icon {
+	width: 20px;
+	margin: 0 7px;
+}
+
+/* header end */
