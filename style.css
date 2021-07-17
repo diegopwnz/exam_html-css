@@ -10,12 +10,24 @@ a:visited {
 	color: #000;
 }
 
-.container {
+
+
+/* container */
+
+.container__header {
 	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
 }
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+}
+
+/* container end */
 
 /* header */
 
@@ -65,3 +77,24 @@ a:visited {
 }
 
 /* header end */
+
+
+
+/* main section */
+.main__section {
+	display: flex;
+}
+
+.main__section-text {
+	width: 50%;
+}
+
+.main__section-img {
+	width: 50%;
+}
+
+.main__section-image {
+	width: 100%;
+}
+
+/* main section end */
