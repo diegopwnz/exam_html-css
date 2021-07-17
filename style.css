@@ -22,9 +22,10 @@ a:visited {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
 	display: flex;
+	align-items: center;
 }
 
 /* container end */
@@ -87,7 +88,25 @@ a:visited {
 
 .main__section-text {
 	width: 50%;
+	padding: 19px;
 }
+
+.main__title {
+	font-size: 44px;
+	font-weight: 400;
+}
+
+.main__text {
+	padding-right: 123px;
+}
+
+.main__subtext {
+	padding-right: 123px;
+	font-size: 14px;
+	opacity: 0.9;
+	margin-bottom: 20px;
+}
+
 
 .main__section-img {
 	width: 50%;
@@ -95,6 +114,14 @@ a:visited {
 
 .main__section-image {
 	width: 100%;
+}
+
+
+.btn {
+	padding: 15px 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.301);
 }
 
 /* main section end */
