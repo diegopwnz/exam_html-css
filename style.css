@@ -5,6 +5,10 @@ body {
 	padding: 0;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 a:visited {
 	text-decoration: none;
 	color: #000;
@@ -215,7 +219,7 @@ a:visited {
 }
 
 
-.gallery_arrow {
+.gallery__arrow {
 	border: solid #fff;
 	border-width: 0 5px 5px 0;
 	display: inline-block;
@@ -241,7 +245,7 @@ a:visited {
 	left: 30px;
 }
 
-.gallery__images:hover .arrow {
+.gallery__images:hover .gallery__arrow {
 	opacity: 1;
 }
 
@@ -271,17 +275,51 @@ a:visited {
 
 .features__item-img {
 	width: 50px;
-	margin-bottom: 10px;
+	margin-top: 50px;
 }
 
 
-.features__title {
+.features__item-title {
 	font-weight: 700;
 	font-size: 18px;
 }
 
 .features__text {
 	padding: 0px 23px 0 23px;
+	margin-bottom: 50px;
+}
+
+/* Features border */
+
+/* Features borderend */
+.border-one {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.border-two {
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-top: none;
+}
+
+.border-three {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.border-four {
+	border-top: 1px solid rgba(0, 0, 0, 0.15);
+	border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.border-five {
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-bottom: none;
+}
+
+.border-six {
+	border-left: 1px solid rgba(0, 0, 0, 0.15);
+	border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 /* Features end */
