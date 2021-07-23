@@ -591,6 +591,12 @@ a:visited {
 /* Footer end */
 
 /* Media */
+@media (max-width: 2000px) {
+	.form__flex-contactsmall {
+		display: none;
+	}
+}
+
 @media (max-width: 850px) {
 	.header__social {
 		display: none;
@@ -694,6 +700,10 @@ a:visited {
 		justify-content: space-between;
 		width: 95%;
 		margin: 0 25px;
+	}
+
+	.form__flex-contactsmall {
+		display: none;
 	}
 }
 
