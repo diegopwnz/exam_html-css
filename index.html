@@ -17,6 +17,27 @@
 		<div class="container__header">
 			<nav class="nav">
 				<a href="" class="logo__title">TOUR-GUIDE</a>
+
+
+				<div class="mobile">
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Информация</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+
+
+
 				<ul class="nav__list">
 					<li>
 						<a href="" class="nav__link">Stories</a>
@@ -51,6 +72,7 @@
 
 			</div>
 		</div>
+
 	</header>
 	<main class="main__section">
 		<div class="container">
@@ -79,7 +101,7 @@
 				<div class="section__story-img">
 					<img src="https://picsum.photos/400/310" alt="" class="section__story-image">
 				</div>
-				<div class="section__story-text">
+				<div class="section__story-text order-one">
 					<h2 class="section__story-title">Story</h2>
 					<p class="">
 						Maecenas in cursus elit, eget interdum tortor. Vestibulum cursus quis dui nec commodo. Sed convallis
@@ -93,7 +115,7 @@
 			</div>
 
 		</section>
-		<section class="section__story">
+		<section class="section__story section__story-border">
 			<div class="container">
 
 				<div class="section__story-text">
@@ -110,6 +132,7 @@
 				<div class="section__story-img">
 					<img src="https://picsum.photos/400/305" alt="" class="section__story-image">
 				</div>
+
 			</div>
 
 		</section>
@@ -119,12 +142,20 @@
 		<div class="container__normal">
 			<h2 class="gallery__title">Gallery</h2>
 			<div class="gallery__images">
-				<img src="https://picsum.photos/400/300" alt="" class="gallery__images-hight">
-				<img src="https://picsum.photos/405/300" alt="" class="gallery__images-hight">
-				<img src="https://picsum.photos/200/300" alt="" class="gallery__images-small">
-				<img src="https://picsum.photos/410/300" alt="" class="gallery__images-hight">
+				<img src="https://picsum.photos/400/300" alt="" class="gallery__images-hight image-one">
+
+				<img src="https://picsum.photos/405/300" alt="" class="gallery__images-hight image-two">
+				<img src="https://picsum.photos/200/300" alt="" class="gallery__images-small image-three">
+				<img src="https://picsum.photos/410/300" alt="" class="gallery__images-hight image-four">
 				<a href=""><i class="gallery__arrow left"></i></a>
 				<a href=""><i class="gallery__arrow right"></i></a>
+				<div class="gallery__hidden-text">
+					<h3 class="gallery__hidden-title">Title</h3>
+					<p class="gallery__text">
+						Aenean vulputate, turpis a rutrum tempus, dui quam molestie purus, vitae mattis mi ligula ut eros.
+					</p>
+					<button class="btn hidden-text__button">More</button>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -177,9 +208,98 @@
 				</div>
 			</div>
 		</div>
-
-
 	</section>
+
+	<section class="section__write">
+		<div class="container__normal">
+			<h3 class="section__write-title">Write to us</h3>
+			<form action="#" class="form">
+				<div class="form__flex-item">
+					<div class="flex__name write-flex">
+						<label for="name__input" class="name">Name:</label>
+						<input type="text" id="name__input" class="name__input write-input">
+					</div>
+					<div class="flex__email write-flex">
+						<label for="email__input" class="email">Email:</label>
+						<input type="email" id="email__input" class="email__input write-input">
+					</div>
+					<div class="flex__phone write-flex">
+						<label for="phone__input" class="phone">Phone:</label>
+						<input type="phone" id="phone__input" class="phone__input write-input">
+					</div>
+				</div>
+				<div class="form__flex-contact">
+					<label for="" class="form-contact">Contact me via:</label>
+					<input type="radio" class="contact-input" id="radio-one">
+					<label for="radio-one" class="contact-label">Email</label>
+					<input type="radio" class="contact-input" id="radio-two">
+					<label for="radio-two" class="contact-label">Phone</label>
+					<input type="radio" class="contact-input" id="radio-three">
+					<label for="radio-three" class="contact-label">Telegram</label>
+				</div>
+				<div class="form__flex-contactsmall">
+					<label for="" class="form-contact">Contact me via:</label>
+					<div class="form__flex-contactwrapper">
+						<input type="radio" class="contact-input" id="radio-one">
+						<label for="radio-one" class="contact-label">Email</label>
+						<input type="radio" class="contact-input" id="radio-two">
+						<label for="radio-two" class="contact-label">Phone</label>
+						<input type="radio" class="contact-input" id="radio-three">
+						<label for="radio-three" class="contact-label">Telegram</label>
+					</div>
+				</div>
+				<div class="form__select-topic">
+					<label for="option-select" class="topic">Topic:</label>
+					<select value="" class="topic-option" id="option-select">
+						<option name="story" id="" selected>Post my story</option>
+						<option name="story" id="">Lost my story</option>
+						<option name="story" id="">Most my story</option>
+					</select>
+				</div>
+				<div class="textarea-message">
+					<label for="" class="message">Message:</label>
+					<textarea name="" id="" cols="30" rows="10" class="message-text"></textarea>
+				</div>
+				<div class="human__and-button">
+					<div class="human__wrapper">
+						<input type="checkbox" id="human" class="checkbox">
+						<label for="human" class="human-check">I am a human</label>
+					</div>
+					<button type="submit" class="btn">SEND</button>
+				</div>
+			</form>
+			<span class="section__write-border"></span>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__social">
+			<div class="container__normal">
+				<div class="footer__social-wrapper">
+					<div class="footer__social">
+						<a href="https://twitter.com/" class="footer__social-link">
+							<img src="img/social/twitter-128.png" alt="" class="twitter  footer__icon">
+						</a>
+						<a href="https://facebook.com" class="footer__social-link">
+							<img src="img/social/facebook-128.png" alt="" class="facebook  footer__icon">
+						</a>
+						<a href="https://www.instagram.com/" class="footer__social-link">
+							<img src="img/social/instagram-2-128.png" alt="" class="instagram  footer__icon">
+						</a>
+						<a href="https://www.youtube.com/" class="footer__social-link">
+							<img src="img/social/youtube-128.png" alt="" class="youtube footer__icon">
+						</a>
+						<a href="https://www.google.com/intl/ru/gmail/about/" class="footer__social-link">
+							<img src="img/social/gmail-128.png" alt="" class="gmail footer__icon">
+						</a>
+					</div>
+					<p class="copyright">
+						&#169; UNTITLED 2019
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 </body>
 
 </html>
